@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Libre+Barcode+39&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Expense Tracking Software</title>
+</head>
+
+<body>
+    <!--Heading of page-->
+    <h1 id="barcode">Expense Tracking Software</h1>
+    <h1 id="page-title">Expense Tracking Software</h1>
+
+    <!--Input fields-->
+    <form action="">
+        <select name="input-type" id="input-type">
+          <option value="">-Select Payment Type-</option>
+          <option style="background-image:url(./icons/outline_money_black_24dp.png)" value="Cash">Cash</option>
+          <option style="background-image:url(./icons/outline_credit_card_black_24dp.png)" value="Credit Card">Credit Card</option>
+          <option style="background-image:url(./icons/outline_account_balance_black_24dp.png)" value="Checking">Checking</option>
+          <option style="background-image:url(./icons/outline_savings_black_24dp.png)" value="Savings">Savings</option>
+          <option style="background-image:url(./icons/Icons8-Windows-8-Finance-Bitcoin.ico)" value="Cryptocurrency">Cryptocurrency</option>
+        </select>
+
+        <input type="text" name="input-date" id="input-date" placeholder="When did you buy it?">
+        <input type="text" name="input-location" id="input-location" placeholder="Where did you buy it?">
+        <input type="text" name="input-desc" id="input-desc" placeholder="What did you buy?">
+        <input type="text" name="input-amount" id="input-amount" placeholder="How much was it?">
+    </form>
+
+    <!--Table to display expenses-->
+    <table id="expense-table" class="table table table-dark">
+        <thead>
+          <tr>
+            <th id="payment-type" scope="col">Payment Type</th>
+            <th id="purchase-date" scope="col">Purchase Date</th>
+            <th id="purchase-location" scope="col">Purchase Location</th>
+            <th id="purchase-desc" scope="col">Purchase Description</th>
+            <th id="purchase-amount" scope="col">Purchase Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+            <td id="new-type"><span class="material-icons">credit_card</span></td>
+            <td id="new-date">fsdfsf</td>
+            <td id="new-location"></td>
+            <td id="new-desc">gdfgdgfdgfd</td>
+            <td id="new-amount">fsdfsfdsdfs$$$</td>
+        </tbody>
+      </table>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+<!--Placeholder below for material icons when needed-->
+<!--
+
+    <span class="material-icons">credit_card</span>
+    <span class="material-icons">money</span>
+    <span class="material-icons">monetization_on</span>
+    <span class="material-icons">account_balance</span>
+    <span class="material-icons">savings</span>
+-->

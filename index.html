@@ -35,6 +35,12 @@
         <input type="text" name="input-amount" id="input-amount" placeholder="How much was it?">
     </form>
 
+    <!--Add Button-->
+    <button type="button" id="add-btn" onclick="addExpense()">Add Expense</button>
+
+    <!--Delete Button-->
+    <button type="button" id="delete-btn" onclick="deleteExpense()">Delete Expense</button>
+
     <!--Table to display expenses-->
     <table id="expense-table" class="table table table-dark">
         <thead>
@@ -47,11 +53,11 @@
           </tr>
         </thead>
         <tbody>
-            <td id="new-type"><span class="material-icons">credit_card</span></td>
-            <td id="new-date">fsdfsf</td>
+            <td id="new-type"></td>
+            <td id="new-date"></td>
             <td id="new-location"></td>
-            <td id="new-desc">gdfgdgfdgfd</td>
-            <td id="new-amount">fsdfsfdsdfs$$$</td>
+            <td id="new-desc"></td>
+            <td id="new-amount"></td>
         </tbody>
       </table>
 

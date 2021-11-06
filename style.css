@@ -43,13 +43,12 @@ body{
     background-color:lawngreen;
 }
 
-#delete-btn{
-    position: absolute;
-    left: 80%;
-    top: 56%;
+#delete-button{
+    width: 155px;
+    height: 32px;
+    text-align: center;
     background-color: red;
-    color: white;
-    border-radius: 35px;
+    font-size: 18px;
 }
 /*Input Fields styling*/
 select{
@@ -64,7 +63,7 @@ select{
     position: absolute;
     width: 211px;
     top: 33%;
-    left: 40%;
+    left: 41%;
     border-radius: 5px;
 }
 #input-date{
@@ -102,6 +101,7 @@ table {
 td, th {
     border-left:solid black 1px;
     border-top:solid black 1px;
+
 }
 
 th {

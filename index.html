@@ -39,7 +39,7 @@
     <button type="button" id="add-btn" onclick="addExpense()">Add Expense</button>
 
     <!--Delete Button-->
-    <button type="button" id="delete-btn" onclick="deleteExpense()">Delete Expense</button>
+
 
     <!--Table to display expenses-->
     <table id="expense-table" class="table table table-dark">
@@ -50,14 +50,15 @@
             <th id="purchase-location" scope="col">Purchase Location</th>
             <th id="purchase-desc" scope="col">Purchase Description</th>
             <th id="purchase-amount" scope="col">Purchase Amount</th>
+            <th id="remove-expense" scope="col">Remove Expense</th>
           </tr>
         </thead>
         <tbody>
-            <td id="new-type"></td>
-            <td id="new-date"></td>
-            <td id="new-location"></td>
-            <td id="new-desc"></td>
-            <td id="new-amount"></td>
+            <td style="display: none" id="new-type"></td>
+            <td style="display: none" id="new-date"></td>
+            <td style="display: none" id="new-location"></td>
+            <td style="display: none" id="new-desc"></td>
+            <td style="display: none" id="new-amount"></td>
         </tbody>
       </table>
 

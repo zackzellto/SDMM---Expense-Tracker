@@ -12,27 +12,34 @@ const inputLoc = document.getElementById('input-location');
 const inputDesc = document.getElementById('input-desc');
 const inputAmount = document.getElementById('input-amount');
 
+//Add expense button
+const addButton = document.getElementById('add-btn');
+addButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    addExpense();
+})
+
 //Delete Expense Function
 
-function deleteExpense(e){
-    e.target.parentElement.childElement.remove();
+function deleteExpense(element){
+    element.parentElement.parentElement.remove();
 }
 
 
 //Add Expense Function
 function addExpense(){
-    let i = 1 ;
-    let row = document.getElementById('expense-table').insertRow(i);
-    let typeCell = row.insertCell(0);
-    let dateCell = row.insertCell(1);
-    let locationCell = row.insertCell(2);
-    let descriptionCell = row.insertCell(3);
-    let amountCell = row.insertCell(4);
-    let removeExpCell = row.insertCell(5);
-    let newDeleteBtn = document.createElement('button');
+    const i = 1 ;
+    const row = document.getElementById('expense-table').insertRow(i);
+    const typeCell = row.insertCell(0);
+    const dateCell = row.insertCell(1);
+    const locationCell = row.insertCell(2);
+    const descriptionCell = row.insertCell(3);
+    const amountCell = row.insertCell(4);
+    const removeExpCell = row.insertCell(5);
+    const newDeleteBtn = document.createElement('button');
     newDeleteBtn.setAttribute('id','delete-button')
     newDeleteBtn.textContent = "Delete Expense"
-    newDeleteBtn.addEventListener('click', () => deleteExpense());
+    newDeleteBtn.addEventListener('click', () => deleteExpense(newDeleteBtn));
 
     removeExpCell.appendChild(newDeleteBtn);
 
